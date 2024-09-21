@@ -1,0 +1,7 @@
+{
+  "name": "componentesv8DAMC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

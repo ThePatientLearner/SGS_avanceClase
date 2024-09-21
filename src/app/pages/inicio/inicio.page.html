@@ -1,0 +1,19 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">My App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-list>
+    <ion-list-header color="primary">Mis componentes</ion-list-header>
+
+      @for(componente of componentes; track $index){
+    <ion-item [routerLink]="componente.ruta">
+        <!-- al buscar el nombre a traves de un objeto hay que poner name entre corchetes [] , solo no se ponen cuando pasas un string ""-->
+      <ion-icon slot="start" [name]="componente.icono"></ion-icon>
+      <ion-label>{{componente.nombre}}</ion-label>
+    </ion-item>
+      }
+  </ion-list>
+</ion-content>
